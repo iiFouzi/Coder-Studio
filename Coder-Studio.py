@@ -107,9 +107,9 @@ if __name__ == "__main__":
     Mainmenu = Menu(root)
     # File Menu
     filemenu = Menu(Mainmenu, tearoff=0)
-    filemenu.add_cascade(label="Open File", command=openFile)
-    filemenu.add_cascade(label="New File", command=newFile)
-    filemenu.add_cascade(label="Save File", command=saveFile)
+    filemenu.add_command(label="Open File", command=openFile)
+    filemenu.add_command(label="New File", command=newFile)
+    filemenu.add_command(label="Save File", command=saveFile)
     Mainmenu.add_cascade(label="File", menu=filemenu)
     root.config(menu=Mainmenu)
     #main frame
